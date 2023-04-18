@@ -17,4 +17,4 @@ read -es PASSWORD
 docker run --rm palansher/utils htpasswd -Bbn username $$PASSWORD > somedir/somefile
 ```
 
-also see 'Makefile', for more comfortable password generating
+also see 'Makefile.example', for more comfortable password generating
