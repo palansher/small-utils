@@ -1,0 +1,8 @@
+SHELL := /bin/bash
+
+.ONESHELL:
+generate-htpassword:
+	@echo "enter basic auth password for user 'username':"
+	@read -es PASSWORD &&
+	@docker run --rm palansher/utils htpasswd -Bbn username $$PASSWORD > somedir/somefile &&
+	@echo "password hash for user 'username' was saved to somedir/somefile" || echo "failed"
