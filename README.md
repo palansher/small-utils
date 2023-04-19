@@ -20,4 +20,7 @@ docker run --rm palansher/utils htpasswd -Bbn username $$PASSWORD > somedir/some
 also see 'Makefile.example', for more comfortable password generating
 
 
-### Alternative: https://github.com/demyxsh/utilities
+### Alternatives: 
+- https://github.com/demyxsh/utilities
+- https://hostingcanada.org/htpasswd-generator/
+
